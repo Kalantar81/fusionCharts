@@ -1,0 +1,73 @@
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-top: 10px;
+}
+
+#tableFormat {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tableFormat td, #tableFormat th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tableFormat tr:nth-child(even){background-color: #f2f2f2;}
+
+#tableFormat tr:hover {background-color: #ddd;}
+
+#tableFormat th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+a:link, a:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.text{
+  text-align: left;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+.aboutUs{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 180px;
+  padding-top: 10px;
+}
+
+.tsgLinkedIn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  height: 180px;
+  padding-top: 10px;
+}
+
+.myProfile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  height: 180px;
+  padding-top: 10px;
+}
+
+

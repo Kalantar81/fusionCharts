@@ -1,0 +1,45 @@
+<nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand" [routerLink] = "['home']">Charts</a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item" [routerLinkActive] = "['active']">
+      <a class="nav-link" [routerLink] = "['home']"
+         style ="padding: 5px 5px 5px 5px">
+        <div style="text-align: center">Home</div>
+        <img src="../assets/images/fusioncharts.jpg"
+             class="navImg"/>
+      </a>
+    </li>
+      <li class="nav-item" [routerLinkActive] = "['active']">
+        <a class="nav-link" [routerLink] = "['areaSingleDragable']"
+           style ="padding: 5px 5px 5px 5px">
+          <div style="text-align: center">Question 1</div>
+          <img src="../assets/images/firstQuestion.PNG"
+               class="navImg"/>
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive] = "['active']">
+        <a class="nav-link" [routerLink] = "['lineChart']"
+           style ="padding: 5px 5px 5px 5px">
+          <div style="text-align: center">Question 2</div>
+          <img src="../assets/images/secondQuestion.PNG"
+               class="navImg"/>
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive] = "['active']">
+        <a class="nav-link" [routerLink] = "['treadlines']"
+           style ="padding: 5px 5px 5px 5px">
+          <div style="text-align: center">Question 3</div>
+          <img src="../assets/images/curve.PNG"
+               class="navImg"/>
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive] = "['active']">
+          <a class="nav-link" [routerLink] = "['invisibleDataset']"
+             style ="padding: 5px 5px 5px 5px">
+            <div style="text-align: center">Question 4</div>
+            <img src="../assets/images/fourthQuestion.PNG"
+                 class="navImg"/>
+          </a>
+        </li>
+  </ul>
+</nav>

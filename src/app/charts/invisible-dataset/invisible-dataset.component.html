@@ -1,0 +1,24 @@
+<div id="container"
+     style="width: 100%;"
+     class="jumbotron">
+     <div class="row">
+       <div class="col-md-8">
+        <fusioncharts
+            [width]="chartWidth"
+            [height]="chartHeight"
+            type="dragline"
+            [dataSource]="dataSource">
+        </fusioncharts>
+       </div>
+       <div class="col-md-4">
+          <h4>Must be:</h4>
+          <img src='../assets/images/invisibleDataset.PNG' style = "width: 400px; height: 280px">
+        </div>
+     </div>
+     <div class="row">
+        <h4>1. It doesn't paints a curve, as I want.</h4>
+        <p> It must show a values biger then '-15' in blue colors.
+        <br>The other value gaps will be painted o white color
+      </p>
+      </div>
+</div>
