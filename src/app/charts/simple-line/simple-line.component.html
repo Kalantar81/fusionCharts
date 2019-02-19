@@ -1,0 +1,50 @@
+<div id="container"
+     style="width: 100%;"
+     class="jumbotron">
+       <fusioncharts
+          width="1000"
+          height="570"
+          type="dragline"
+          [dataSource]="dataSource">
+     </fusioncharts>
+  <div class = "row" style="padding-top: 10px">
+    <div class = "col-md-2">
+      <button
+      class = "btn btn-primary"
+      (click) = "dataFromServer2Pnt()"
+      >2 points</button>
+    </div>
+    <div class = "col-md-2">
+      <button
+      class = "btn btn-primary"
+      (click) = "dataFromServer10Pnt()"
+      >10 points</button>
+    </div>
+    <div class = "col-md-2">
+      <button
+      class = "btn btn-primary"
+      (click) = "dataFromServer100Pnt()"
+      >100 points</button>
+    </div>
+    <div class = "col-md-2">
+        <button
+        class = "btn btn-primary"
+        (click) = "dataFromServer1000Pnt()"
+        >1000 points</button>
+      </div>
+      <div class = "col-md-2">
+          <button
+          class = "btn btn-primary"
+          (click) = "dataFromServer10000Pnt()"
+          >10000 points</button>
+        </div>
+        <div class = "col-md-2">
+            <button
+            class = "btn btn-primary"
+            (click) = "dataFromServerMaxPnt()"
+            >43000 points</button>
+            <div><h6> This dataset with very small 'plotBinSize', so it will take some time to see a graph</h6></div>
+
+          </div>
+  </div>
+</div>

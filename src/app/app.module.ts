@@ -18,14 +18,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { LineChartComponent } from './charts/line-chart/line-chart.component';
+import { MultiplyDatasetsFromServerService } from 'assets/server/multiply-datasets-from-server.service';
 import { DemoServerService } from 'assets/server/demo-server.service';
-import { AreaSingleDragableComponent } from './charts/area-single-dragable/area-single-dragable.component';
-import { CurvelinesComponent } from './charts/curvelines/curvelines.component';
-import { CurveService } from './charts/curvelines/curvelines.service';
-import { InvisibleDatasetComponent } from './charts/invisible-dataset/invisible-dataset.component';
-import { InvisibleDatasetService } from './charts/invisible-dataset/invisible-dataset.service';
-
+import { StandartLineChartComponent } from './charts/standart-line-chart/standart-line-chart.component';
+import { SimpleLineComponent } from './charts/simple-line/simple-line.component';
+import { StandartLineChartService } from './charts/standart-line-chart/standart-line-chart.service';
+import { SimpleLineService } from './charts/simple-line/simple-line.service';
 
 
 // Use fcRoot function to inject FusionCharts library, and the modules you want to use
@@ -36,10 +34,8 @@ FusionChartsModule.fcRoot(FusionCharts, Dragline, Dragarea);
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    LineChartComponent,
-    AreaSingleDragableComponent,
-    CurvelinesComponent,
-    InvisibleDatasetComponent
+    StandartLineChartComponent,
+    SimpleLineComponent
   ],
   imports: [
     BrowserModule,
@@ -51,9 +47,10 @@ FusionChartsModule.fcRoot(FusionCharts, Dragline, Dragarea);
     FusionChartsModule
   ],
   providers: [
+    MultiplyDatasetsFromServerService,
     DemoServerService,
-    CurveService,
-    InvisibleDatasetService
+    StandartLineChartService,
+    SimpleLineService
   ],
   bootstrap: [AppComponent]
 })

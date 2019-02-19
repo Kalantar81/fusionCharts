@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
@@ -15,17 +16,22 @@ export class DemoServerService {
       .map((response: Response) => <IDataFromServer>response.json());
   }
 
-  getTreadlinesData(): Observable<IServerData> {
+  getTreadlinesData(): Observable<ITreadlinesData> {
     return this._http
-      .get('assets/data/treadlinesData.json')
-      .map((response: Response) => <IServerData>response.json());
+      .get('assets/data/maxDataset.json')
+      .map((response: Response) => <ITreadlinesData>response.json());
   }
 
 }
 
-export interface IServerData {
-  xAxisParams: Array<number>;
-  yAxisParams: Array<number>;
+export interface ITreadlinesData {
+  levelsAmount?: number;
+  gapValue?: number;
+  xAxisData?: Array<number>;
+  yAxisProfileGroundWithDowning?: Array<number>;
+  ellipseWithDowningY?: Array<number>;
+  yAxisObstacles?: Array<number>;
+  yAxisMinTrendLine?: Array<number>;
 }
 
 

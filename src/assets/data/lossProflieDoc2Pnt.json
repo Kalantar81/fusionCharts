@@ -1,0 +1,23 @@
+{
+  "xAxisData":
+    [0.00,3.72],
+  "downing":
+    [-0.00,-0.00],
+  "profileDataWithDowning":
+    [2219.95,2220.22],
+  "lineOfSightWithDowning":
+    [2269.95,2245.22],
+  "tooltipCoordinates":
+    ["(N)35.809450 (E)35.809450","(N)35.809490 (E)35.809490"],
+  "fernelEllipseWithDowning":
+    [2269.95,2245.22],
+  "tooltipClearance":
+    [50.00,25.00],
+  "tooltipFersnelPenetrationPerc":
+    [0.00,0.00],
+  "profileTotalMinHeightMeters": 2219.95,
+  "profileTotalMaxHeightMeters": 2269.95,
+  "profileDistanceMeters": 3.724785,
+  "profileIncrementMeters": 3.724785,
+  "RFLOS":true
+}
